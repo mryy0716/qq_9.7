@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telphone=no, email=no" >
+	<title>Document</title>
+	<link rel="stylesheet" href="fonts/iconfont.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<span><img src="img/tx_03.jpg"></span>
+		<h1>消息</h1>
+		<i class="iconfont">&#xe6fb;</i>
+	</header>
+	<input type="text" placeholder="搜索" class="search">
+	<section>
+		<div id="uls" class="box">
+			<div v-for="item in arr">
+				<dl>
+					<dt><img v-bind:src="item.img"></dt>
+					<dd>
+						<h4>{{item.name}}<span>{{item.time}}</span></h4>
+						<p>{{item.cont}}</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<i class="iconfont bg">&#xe60d;</i>
+		<i class="iconfont">&#xe6cc;</i>
+		<i class="iconfont">&#xe6a3;</i>
+	</footer>
+	<script src="js/vue.js"></script>
+	
+	<script>
+		function rem(value){
+			var html = document.getElementsByTagName("html")[0];
+			html.style.fontSize = window.screen.width/value + "px";
+			window.onresize = function(){
+				html.style.fontSize = window.screen.width/value + "px";        
+			}
+		}
+		rem(3.2);
+	</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: .12rem; 
+}
+header {
+    height: .45rem;
+    display: flex;
+    align-items: center; 
+    background: #3aaafd;
+    color:#fff;
+}
+header h1{
+  flex: 3;
+  font-size: .22rem;
+  text-align: center;
+}
+header span, header i{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+header i{
+    text-align: center;
+    line-height: .45rem;
+}
+header img{
+  width:auto;
+  height:100%;
+  border-radius: 50%;
+  padding: .05rem .1rem;
+}
+.search{
+    margin:.08rem;
+    background: #eee;
+    border: none;
+    line-height:.3rem;
+    text-align: center;
+    outline: none;
+}
+section {
+    flex: 1;
+    overflow-y: scroll; 
+}
+section .box {
+    width: 100%;
+    height: auto; 
+}
+section dl {
+    display: flex;
+    padding-left: .1rem; 
+}
+section dl dt {
+    padding: .05rem; 
+}
+section dt img {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+}
+section dl dd {
+    flex: 1;
+    padding: .05rem; 
+}
+section h4, section p {
+    display: flex;
+    justify-content: space-between;
+    padding-right: .1rem;
+    line-height: .2rem; 
+}
+section h4{
+    font-size: .14rem;
+    font-weight: bold;
+}
+section h4 span {
+    color: #919191; 
+    font-size: .12rem;
+    font-weight: normal;
+}
+section dd p {
+    color: #919191; 
+}
+footer {
+    height: .45rem;
+    display: flex;
+    align-items: center; 
+}
+footer i {
+    flex: 1;
+    text-align: center; 
+}
+.bg{
+    color:#47bafe;
+}
