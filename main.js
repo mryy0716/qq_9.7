@@ -1,5 +1,5 @@
 var vm=new Vue({
-	el:"#uls",
+	el:"#list",
 	data:{
 		arr:[]
 	},
